@@ -8,7 +8,7 @@ def moves(h):
 def game(h):
     if sum(h) >= 82: return 'W'
     if any(game(x) == 'W' for x in moves(h)): return 'П1'
-    if any(game(x) == 'П1' for x in moves(h)): return 'В1'
+    if all(game(x) == 'П1' for x in moves(h)): return 'В1'
     if any(game(x) == 'В1' for x in moves(h)): return 'П2'
     if all(game(x) in ['П1','П2'] for x in moves(h)): return 'В2'
 
