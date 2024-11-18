@@ -5,4 +5,4 @@ def f(n):
     else: r = '11' + r[2:] + '1'
     return int(r, 2)
 
-print(min([f(r) for r in range(28, 10000)]))
+print(min([f(n) for n in range(28, 10000)]))
