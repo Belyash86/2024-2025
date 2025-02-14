@@ -9,4 +9,4 @@ for chel in l:
             domiki[d] = chel[1]
             max_line = max(max_line, ceil(len([x for x in domiki if x >= chel[0]])/k))
             break
-print(max_line, len([x for x in domiki if x > l[-1][0]]))
+print(max_line, len([x for x in domiki if x >= l[-1][0]]))

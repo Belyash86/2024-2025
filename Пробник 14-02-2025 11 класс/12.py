@@ -6,7 +6,6 @@ for n in range(2, 100, 2):
         s = s.replace('>21', '1>', 1)
         s = s.replace('1<', '<2', 1)
     s = s.replace('<','').replace('>','')
-    summ = sum([int(x) for x in s])
-    if summ > 103:
+    if sum([int(x) for x in s]) > 103:
         print(n)
         break
