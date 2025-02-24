@@ -1,5 +1,5 @@
 l = [int(x) for x in open('files/4.txt')]
-m22 = max([x for x in l if len(str(abs(x))) == 4 and str(x)[2:] == '22'])
+m22 = max([x for x in l if len(str(abs(x))) == 4 and str(x)[-2:] == '22'])
 k = []
 for i in range(len(l)-2):
     c = l[i:i+3]
